@@ -1,6 +1,6 @@
 import { createAgent,tool } from "langchain";
 import { ChatDeepSeek } from "@langchain/deepseek";
-import { appConfig } from "../config/config";
+import { appConfig } from "../../config/config";
 
 import * as z from "zod";
 
