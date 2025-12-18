@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "demo": "tsx langchain-study/first-langchain-agent/langchain-demo.ts"
+    "demo": "tsx langchain-study/first-langchain-agent/langchain-demo.ts",
+    "demo-v2": "tsx langchain-study/update-first-agent/langchain-demo.ts"
   },
   "dependencies": {
     "@langchain/community": "^1.1.0",
