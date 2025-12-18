@@ -2,7 +2,9 @@
   "name": "langchain-ts-demo",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "demo": "tsx langchain-study/first-langchain-agent/langchain-demo.ts"
+  },
   "dependencies": {
     "@langchain/community": "^1.1.0",
     "@langchain/core": "^1.1.6",
