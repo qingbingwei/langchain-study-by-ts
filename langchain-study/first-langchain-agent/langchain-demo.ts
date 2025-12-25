@@ -17,7 +17,7 @@ const getWeather = tool(
 
 const deepseekChatModel = new ChatDeepSeek({
   model: "deepseek-chat",
-  apiKey: appConfig.openaiApiKey,
+  apiKey: appConfig.deepseekApiKey,
 })
 
 const agent = createAgent({

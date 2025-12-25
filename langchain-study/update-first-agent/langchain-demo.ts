@@ -49,8 +49,8 @@ const responseFormat = z.object({
 });
 
 const deepseekChatModel = new ChatDeepSeek({
-  model: "deepseek-chat",
-  apiKey: appConfig.openaiApiKey,
+  model: appConfig.deepseekModel,
+  apiKey: appConfig.deepseekApiKey,
   temperature: 0.5,
 })
 
