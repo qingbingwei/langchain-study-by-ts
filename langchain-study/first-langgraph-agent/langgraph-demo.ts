@@ -19,6 +19,18 @@ import { AIMessage, ToolMessage } from "@langchain/core/messages";
 // Invoke the agent
 import { HumanMessage } from "@langchain/core/messages";
 
+// enable langsmith tracing
+import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from 'url';
+
+// 修复 __dirname 在 ES Module 中的使用
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// 无论在哪个目录运行脚本，都能加载脚本同目录的 .env
+dotenv.config({ path: path.resolve(__dirname, ".env") });
+
 // define the deepseek chat model
 const deepseekChatModel = new ChatDeepSeek({
   model: appConfig.deepseekModel,
